@@ -1,0 +1,709 @@
+<mjml>
+  <mj-head>
+    <mj-title> Hashtag Interactive Welcome - Dominic Arrojado </mj-title>
+
+    <!-- START of Global Attributes -->
+    <mj-breakpoint width="800px" />
+    <mj-attributes>
+      <mj-all
+        padding="0"
+        font-family="'Lucida Grande', 'Helvetica Neue', Helvetica, Arial"
+        line-height="1.4"
+      />
+
+      <mj-class
+        name="project-title"
+        align="left"
+        border-radius="0"
+        background-color="#ffffff"
+        padding-top="40px"
+        inner-padding="7px 12px"
+        color="#2F2D30"
+        font-size="18px"
+        font-weight="bold"
+        text-align="left"
+        text-transform="uppercase"
+      />
+      <mj-class
+        name="project-desc"
+        padding-top="15px"
+        color="#ffffff"
+        font-size="18px"
+      />
+
+      <mj-class
+        name="team-container"
+        css-class="mobile-padding-x-0"
+        padding="0 80px"
+      />
+      <mj-class
+        name="team"
+        css-class="mobile-padding-x-0"
+        width="50%"
+        padding="50px 15px 0"
+      />
+      <mj-class name="team-img" width="130px" />
+      <mj-class
+        name="team-name"
+        padding-top="10px"
+        align="center"
+        color="#2F2D30"
+        font-size="18px"
+        font-weight="bold"
+        text-transform="uppercase"
+      />
+      <mj-class
+        name="team-position"
+        align="center"
+        color="#666666"
+        font-size="16px"
+      />
+      <mj-class
+        name="team-desc"
+        padding-top="30px"
+        align="center"
+        color="#2F2D30"
+        font-size="18px"
+      />
+      <mj-class
+        name="team-contact"
+        css-class="btn-text-hover"
+        padding-top="30px"
+        background-color="transparent"
+        inner-padding="0"
+        align="center"
+        color="#808080"
+        font-size="14px"
+        font-weight="normal"
+      />
+      <mj-class
+        name="team-divider"
+        padding-top="15px"
+        align="center"
+        width="60px"
+        border-width="3px"
+        border-color="#2F2D30"
+      />
+
+      <mj-class
+        name="footer-text"
+        vertical-align="middle"
+        padding-top="14px"
+        color="#ffffff"
+        font-size="12px"
+        text-transform="uppercase"
+        background-color="transparent"
+        inner-padding="0"
+      />
+    </mj-attributes>
+    <!-- END of Global Attributes -->
+
+    <!-- START of Inline Style Overrides -->
+    <!-- prettier-ignore -->
+    <mj-style inline="inline">
+      .btn-text-nav,
+      .btn-text-footer {
+        display: inline;
+        margin: 0;
+        background: transparent;
+        color: #ffffff;
+        font-size: 12px;
+        font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
+        line-height: 1.2;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .btn-text-nav {
+        font-weight: bold;
+      }
+      
+      .text-capitalize {
+        text-transform: capitalize;
+      }
+
+      .img-inline {
+        display: inline;
+        height: auto;
+        outline: none;
+        border: 0;
+        font-size: 13px;
+        text-decoration: none;
+      }
+
+      .img-google-drive {
+        width: 82px;
+      }
+
+      .img-phone,
+      .img-twitter,
+      .img-instagram {
+        width: 14px;
+      }
+
+      .img-phone {
+        padding-right: 5px;
+        text-transform: none;
+      }
+
+      .img-facebook {
+        width: 7px;
+      }
+
+      .gdrive-logo-container,
+      .gdrive-text-container {
+        vertical-align: middle;
+      }
+
+      .gdrive-logo-container {
+        width: 82px;
+      }
+
+      .gdrive-text-container {
+        padding-left: 15px;
+        color: #2F2D30;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: bold;
+      }
+
+      .text-google-drive {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+    </mj-style>
+    <!-- END of Inline Style Overrides -->
+
+    <!-- START of Internal/Mobile Styles -->
+    <!-- prettier-ignore -->
+    <mj-style>
+      .btn-text-hover a:hover,
+      a.btn-text-hover:hover {
+        cursor: pointer !important;
+        text-decoration: underline !important;
+      }
+
+      .btn-hover a:hover {
+        background-color: #dddddd !important;
+      }
+
+      @media only screen and (max-width: 799px) {
+        .mobile-hide {
+          display: none !important;
+        }
+
+        .mobile-center,
+        .mobile-center > div {
+          text-align: center !important;
+        }
+
+        .mobile-center > table {
+          margin: 0 auto !important;
+        }
+
+        .mobile-padding-x-0 > table > tbody > tr > td {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+      }
+    </mj-style>
+    <!-- END of Internal/Mobile Styles -->
+
+    <mj-raw>
+      <!-- START of Google Tag Manager -->
+      <script>
+        if (window.location.hostname !== "localhost") {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-TSMLTPT");
+        }
+      </script>
+      <!-- END of Google Tag Manager -->
+
+      <link rel="icon" href="https://dominicarrojado.com/favicon.ico" />
+      <meta name="theme-color" content="#d7e1e9" />
+      <meta
+        name="description"
+        content="Email template for Hashtag Interactive Welcome"
+      />
+      <link
+        rel="canonical"
+        href="https://dominicarrojado.com/hashtag-interactive-welcome-edm/"
+      />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="Hashtag Interactive Welcome - Dominic Arrojado"
+      />
+      <meta
+        property="og:description"
+        content="Email template for Hashtag Interactive Welcome"
+      />
+      <meta
+        property="og:url"
+        content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/"
+      />
+      <meta
+        property="og:site_name"
+        content="Hashtag Interactive Welcome - Dominic Arrojado"
+      />
+      <meta
+        property="og:image"
+        content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/images/hashtag-interactive-welcome-screenshot.png"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/images/hashtag-interactive-welcome-screenshot.png"
+      />
+      <meta property="og:image:width" content="2880" />
+      <meta property="og:image:height" content="1800" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:description"
+        content="Email template for Hashtag Interactive Welcome"
+      />
+      <meta
+        name="twitter:title"
+        content="Hashtag Interactive Welcome - Dominic Arrojado"
+      />
+      <meta
+        name="twitter:image"
+        content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/images/hashtag-interactive-welcome-screenshot.png"
+      />
+    </mj-raw>
+  </mj-head>
+  <mj-body width="800px" background-color="#ffffff">
+    <!-- START of Header -->
+    <mj-section
+      background-url="images/header-bg.jpg"
+      background-color="#2F2D30"
+      padding="20px 0"
+    >
+      <mj-group>
+        <mj-column width="100%">
+          <mj-image
+            src="images/logo-hashtag-interactive.png"
+            alt="Hashtag Interactive logo"
+            width="155px"
+          />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Header -->
+
+    <!-- START of Navbar -->
+    <mj-section background-color="#000000" padding="10px 0">
+      <mj-group>
+        <mj-column width="100%">
+          <mj-text align="center" color="#ffffff" font-size="12px">
+            <a
+              href="https://www.hashtag-interactive.com/our-story/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="btn-text-nav btn-text-hover"
+              >Our Story</a
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+              href="https://www.hashtag-interactive.com/what-we-do/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="btn-text-nav btn-text-hover"
+              >What We Do</a
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+              href="https://www.hashtag-interactive.com/blog/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="btn-text-nav btn-text-hover"
+              >Blog</a
+            >
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Navbar -->
+
+    <!-- START of Welcome -->
+    <mj-section>
+      <mj-group>
+        <mj-column width="100%">
+          <mj-image
+            src="images/banner-welcome.jpg"
+            alt="Welcome to Hashtag! Let's get started."
+          />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Welcome -->
+
+    <!-- START of Thank You -->
+    <mj-section background-color="#2F2D30" padding="40px">
+      <mj-group>
+        <mj-column width="100%">
+          <mj-text align="center" color="#ffffff" font-size="18px">
+            Thank you for choosing Hashtag Interactive!<br
+              class="mobile-hide"
+            />
+            We're super stoked to start working with your team.
+          </mj-text>
+          <mj-text
+            padding-top="20px"
+            align="center"
+            color="#ffffff"
+            font-size="18px"
+          >
+            To get you going, we've come up with a primer to help you through
+            the<br class="mobile-hide" />
+            Hashtag Interactive journey. We'll keep you updated on the progress
+            of each<br class="mobile-hide" />
+            of your projects and campaigns, but please don’t hesitate to keep in
+            touch<br class="mobile-hide" />
+            with anyone on our team for any questions or clarifications.
+          </mj-text>
+          <mj-image
+            src="images/icon-arrow-down.jpg"
+            alt="Arrow down icon"
+            align="center"
+            padding-top="70px"
+            width="19px"
+          />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Thank You -->
+
+    <!-- START of Our Profile -->
+    <mj-section>
+      <mj-column width="22%" css-class="mobile-hide">
+        <mj-image
+          src="images/hashtag-interactive-team.jpg"
+          alt="Hashtag Interactive team members doing hashtag fingers sign"
+          align="left"
+          width="152px"
+        />
+      </mj-column>
+      <mj-column width="56%" padding="50px 40px 59px">
+        <mj-image
+          src="images/our-profile.png"
+          alt="Our Profile"
+          align="left"
+          width="130px"
+        />
+        <mj-text padding-top="5px" color="#2F2D30" font-size="18px">
+          We are a digital marketing consultancy that is optimised for a
+          digital-centric world. We offer an integrated suite of digital
+          solutions for real world marketing situations - from strategy and
+          planning consultations to social media and interactive executions.
+        </mj-text>
+      </mj-column>
+      <mj-column width="22%" css-class="mobile-hide">
+        <mj-image
+          src="images/hashtag-interactive-team.jpg"
+          alt="Hashtag Interactive team members doing hashtag fingers sign"
+          align="right"
+          width="152px"
+        />
+      </mj-column>
+    </mj-section>
+    <!-- END of Our Profile -->
+
+    <!-- START of Your Project -->
+    <mj-section background-color="#2F2D30" padding="40px 40px 60px">
+      <mj-group>
+        <mj-column
+          css-class="mobile-padding-x-0"
+          width="100%"
+          padding="0 110px"
+        >
+          <mj-image
+            src="images/your-project.png"
+            alt="Your Project"
+            align="left"
+            width="232px"
+          />
+          <mj-text
+            padding-top="5px"
+            color="#ffffff"
+            font-size="14px"
+            text-transform="uppercase"
+          >
+            Duration | 6 months
+          </mj-text>
+          <mj-button mj-class="project-title"> Content Strategy </mj-button>
+          <mj-text mj-class="project-desc">
+            Planning the right content and messaging is crucial in ensuring that
+            you achieve maximum outreach and engagement. Your content strategy
+            with include key content pillars, themes and taglines to help
+            communicate your brand more effectively.
+          </mj-text>
+          <mj-button mj-class="project-title">
+            Social |
+            <span class="text-capitalize"
+              >Facebook, LinkedIn &amp; Instragram</span
+            >
+          </mj-button>
+          <mj-text mj-class="project-desc">
+            We will work on expanding your reach and driving brand awareness -
+            all of which ultimately impacts your sales conversion. We will work
+            to establish a clear brand voice and content style guide that is
+            consistent with Singapore Airshow's theme, diversifying content to
+            include more interactive formats and drive engagement.
+          </mj-text>
+          <mj-button mj-class="project-title">
+            Reports and Analytics
+          </mj-button>
+          <mj-text mj-class="project-desc">
+            We will provide monthly reports to keep watch on the metrics that
+            matter most to your strategic initiatives.
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Your Project -->
+
+    <!-- START of Google Drive -->
+    <mj-section background-color="#ffffff" padding="40px 40px 60px">
+      <mj-group>
+        <mj-column
+          css-class="mobile-padding-x-0"
+          width="100%"
+          padding="0 110px"
+        >
+          <mj-table color="#2F2D30" font-size="18px" font-weight="bold">
+            <tr>
+              <td class="gdrive-logo-container">
+                <img
+                  src="images/logo-google-drive.png"
+                  alt="Google Drive logo"
+                  class="img-inline img-google-drive"
+                />
+              </td>
+              <td class="gdrive-text-container">
+                Singapore Airshow on <br />
+                <span class="text-google-drive">Google Drive</span>
+              </td>
+            </tr>
+          </mj-table>
+          <mj-text padding-top="40px" color="#2F2D30" font-size="18px">
+            We love Google Apps at Hashtag, and we use Google Drive to store
+            most of our related documents, images and files. So don't be shy,
+            drag and drop your files here because we have unlimited space. Boo
+            yeah!
+          </mj-text>
+          <mj-text padding-top="20px" color="#2F2D30" font-size="18px">
+            We have created a folder for you in this link:
+          </mj-text>
+          <mj-button
+            href="#"
+            css-class="btn-hover"
+            align="left"
+            border-radius="0"
+            border="3px solid #2F2D30"
+            padding-top="20px"
+            background-color="#ffffff"
+            inner-padding="7px 12px"
+            color="#2F2D30"
+            font-size="18px"
+            font-weight="bold"
+            text-transform="uppercase"
+          >
+            Singapore Airshow 2018 ›
+          </mj-button>
+          <mj-text padding-top="20px" color="#2F2D30" font-size="18px">
+            As part of your Social Media Management, we'll also update a daily
+            monitoring report which you can find in this shared folder here:
+          </mj-text>
+          <mj-button
+            href="#"
+            css-class="btn-hover"
+            align="left"
+            border-radius="0"
+            border="3px solid #2F2D30"
+            padding-top="20px"
+            background-color="#ffffff"
+            inner-padding="7px 12px"
+            color="#2F2D30"
+            font-size="15px"
+            font-weight="bold"
+            text-transform="uppercase"
+          >
+            Singapore Airshow 2018: Daily Monitoring Report ›
+          </mj-button>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- END of Google Drive -->
+
+    <!-- START of Meet The Team -->
+    <mj-wrapper background-color="#efefef" padding="40px 40px 60px">
+      <mj-section>
+        <mj-group>
+          <mj-column width="100%">
+            <mj-image
+              src="images/meet-the-team.png"
+              alt="Meet The Team"
+              width="242px"
+            />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+      <mj-section mj-class="team-container">
+        <mj-column mj-class="team">
+          <mj-image
+            mj-class="team-img"
+            src="images/vincent-chin.jpg"
+            alt="Vincent Chin"
+          />
+          <mj-text mj-class="team-name"> Vincent Chin </mj-text>
+          <mj-text mj-class="team-position"> #ManagingPartner </mj-text>
+          <mj-text mj-class="team-desc">
+            Contact Vince when you want advice on your advertising strategy or
+            setting up your digital publication.
+          </mj-text>
+          <mj-button
+            href="mailto:vincent@hashtag-interactive.com"
+            mj-class="team-contact"
+          >
+            vincent@hashtag-interactive.com
+          </mj-button>
+          <mj-divider mj-class="team-divider" />
+        </mj-column>
+        <mj-column mj-class="team">
+          <mj-image
+            mj-class="team-img"
+            src="images/mina-sunico.jpg"
+            alt="Mina Sunico"
+          />
+          <mj-text mj-class="team-name"> Mina Sunico </mj-text>
+          <mj-text mj-class="team-position"> #ChiefContentStrategist </mj-text>
+          <mj-text mj-class="team-desc">
+            Contact Mina if you need help with your overall content strategy,
+            pet care tips, or day-to-day project coordination.
+          </mj-text>
+          <mj-button
+            href="mailto:mina@hashtag-interactive.com"
+            mj-class="team-contact"
+          >
+            mina@hashtag-interactive.com
+          </mj-button>
+          <mj-divider mj-class="team-divider" />
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="team-container">
+        <mj-column mj-class="team">
+          <mj-image
+            mj-class="team-img"
+            src="images/audrey-ang.jpg"
+            alt="Audrey Ang"
+          />
+          <mj-text mj-class="team-name"> Audrey Ang </mj-text>
+          <mj-text mj-class="team-position"> #AccountManager </mj-text>
+          <mj-text mj-class="team-desc">
+            Contact Audrey for day-to-day project coordination.
+          </mj-text>
+          <mj-button
+            href="mailto:audrey@hashtag-interactive.com"
+            mj-class="team-contact"
+          >
+            audrey@hashtag-interactive.com
+          </mj-button>
+          <mj-divider mj-class="team-divider" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <!-- END of Meet The Team -->
+
+    <!-- START of Footer -->
+    <mj-section background-color="#000000" padding="0 20px 14px">
+      <mj-column>
+        <mj-button
+          href="tel:+6569085950"
+          mj-class="footer-text"
+          css-class="btn-text-hover mobile-center"
+          align="left"
+        >
+          <img
+            class="img-inline img-phone"
+            src="images/icon-phone.png"
+            alt="Phone"
+          />+65 6908 5950
+        </mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-button
+          href="https://www.hashtag-interactive.com/"
+          rel="noopener noreferrer nofollow"
+          mj-class="footer-text"
+          css-class="btn-text-hover"
+        >
+          www.hashtag-interactive.com
+        </mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-text mj-class="footer-text" css-class="mobile-center" align="right">
+          Follow Us &nbsp;&nbsp;
+          <a
+            href="https://www.facebook.com/HashtagInteractive"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="btn-text-footer"
+          >
+            <img
+              src="images/logo-facebook.png"
+              alt="Facebook logo"
+              class="img-inline img-facebook"
+            />
+          </a>
+          &nbsp;
+          <a
+            href="https://twitter.com/hashtaginteract"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="btn-text-footer"
+          >
+            <img
+              src="images/logo-twitter.png"
+              alt="Twitter logo"
+              class="img-inline img-twitter"
+            />
+          </a>
+          &nbsp;
+          <a
+            href="https://www.instagram.com/hashtag_interactive/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="btn-text-footer"
+          >
+            <img
+              src="images/logo-instagram.png"
+              alt="Facebook logo"
+              class="img-inline img-instagram"
+            />
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- END of Footer -->
+
+    <mj-raw>
+      <!-- START of Google Tag Manager (noscript) -->
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-TSMLTPT"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        >
+        </iframe>
+      </noscript>
+      <!-- END of Google Tag Manager (noscript) -->
+    </mj-raw>
+  </mj-body>
+</mjml>
