@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title> Hashtag Interactive Welcome - Dominic Arrojado </mj-title>
+    <mj-title> Hashtag Interactive Welcome | Dominic Arrojado </mj-title>
 
     <!-- START of Global Attributes -->
     <mj-breakpoint width="800px" />
@@ -242,7 +242,7 @@
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="Hashtag Interactive Welcome - Dominic Arrojado"
+        content="Hashtag Interactive Welcome | Dominic Arrojado"
       />
       <meta
         property="og:description"
@@ -252,10 +252,7 @@
         property="og:url"
         content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/"
       />
-      <meta
-        property="og:site_name"
-        content="Hashtag Interactive Welcome - Dominic Arrojado"
-      />
+      <meta property="og:site_name" content="Dominic Arrojado" />
       <meta
         property="og:image"
         content="https://dominicarrojado.com/hashtag-interactive-welcome-edm/images/hashtag-interactive-welcome-screenshot.png"
@@ -273,7 +270,7 @@
       />
       <meta
         name="twitter:title"
-        content="Hashtag Interactive Welcome - Dominic Arrojado"
+        content="Hashtag Interactive Welcome | Dominic Arrojado"
       />
       <meta
         name="twitter:image"
